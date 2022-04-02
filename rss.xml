@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<item>
+			<title>Početna</title>
+			<link>https://davidovic99.github.io/recepti/index.html</link>
+			<description>Recepti domaćih jela</description>
+		</item>
+	</channel>
+</rss>

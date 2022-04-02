@@ -1,0 +1,358 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.cleaner {
+  clear: both;
+}
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcbf49;
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+}
+header a {
+  font-size: 22px;
+  margin: 0px 20px;
+  color: #362c28;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+header img {
+  width: auto;
+  height: 100%;
+}
+main {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+#thumb {
+  width: 100%;
+  position: relative;
+  height: 557px;
+  background-image: linear-gradient(
+      rgba(252, 191, 73, 0.3),
+      rgba(252, 191, 73, 0.3)
+    ),
+    url("../img/thumb.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  color: #000;
+}
+#h1ih2 {
+  width: 80%;
+  height: 200px;
+  margin: 0px auto;
+  padding-top: 100px;
+}
+#h1ih2 h1 {
+  font-size: 70px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+#h1ih2 h2 {
+  font-size: 40px;
+}
+#h1ih2 p {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+#thumb a {
+  text-decoration: none;
+  position: absolute;
+  bottom: 15%;
+  left: 36%;
+  padding: 5px 100px;
+  border: 2px solid #000;
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 25px;
+  transition: color 500ms ease, background-color 500ms ease;
+}
+#thumb a:hover {
+  color: #fff;
+  background-color: #000;
+}
+#recepti {
+  width: 100%;
+  height: auto;
+}
+#recepti h3 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+.boja {
+  background-color: #fdd68b;
+}
+.novi {
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  text-align: center;
+}
+.recepti {
+  margin-bottom: 5%;
+}
+.tekstovi {
+  width: 100%;
+  margin: 0px auto;
+  margin-bottom: 5%;
+}
+.naslovi {
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+.isti {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 20px;
+  opacity: 0;
+  transition: 1s all ease;
+  transform: translateY(50px);
+}
+.pojava {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.isti h4 {
+  text-align: center;
+  font-size: 30px;
+}
+.isti img {
+  max-height: 200px;
+  width: auto;
+  margin: 50px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.levitekst,
+.desnitekst {
+  max-width: 60%;
+  height: 100%;
+}
+.tekstovi {
+  max-width: 70%;
+  margin-top: 20px;
+  padding: 20px;
+}
+.sastojci {
+  margin-top: 40px;
+  max-width: 30%;
+}
+ul {
+  list-style-type: none;
+}
+h4 {
+  text-decoration: underline;
+}
+#kontakt {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+#kontakt h3 {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-left: 150px;
+  opacity: 0;
+  transition: 1000ms all ease;
+}
+form {
+  width: 70%;
+  height: auto;
+  margin: 50px auto;
+}
+textarea {
+  resize: vertical;
+  max-height: 200px;
+}
+#oautoru {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  padding-bottom: 100px;
+  background-color: #fdd68b;
+}
+#oautoru h3 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+#hatri {
+  opacity: 0;
+  margin-left: -50px;
+  transition: 1000ms all ease;
+}
+#text {
+  float: left;
+  width: 60%;
+  margin-top: 90px;
+  font-size: 20px;
+  margin-left: -60px;
+  opacity: 0;
+  transition: 1s all ease;
+}
+#oautoru img {
+  width: 17%;
+  height: auto;
+  margin-top: 40px;
+  float: right;
+  margin-right: 0px;
+  border-radius: 15px;
+  opacity: 0;
+  transition: 1s all ease;
+}
+footer {
+  width: 100%;
+  background-color: #fcbf49;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer a {
+  text-decoration: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #f00;
+  font-weight: bold;
+}
+#mreze {
+  display: flex;
+  width: 200px;
+  height: auto;
+  justify-content: space-between;
+  font-size: 22px;
+}
+.fas,
+.fab {
+  color: #000;
+}
+.fas:hover,
+.fab:hover {
+  animation: okreni 1s ease;
+}
+@keyframes okreni {
+  33% {
+    transform: rotate(-30deg);
+  }
+  66% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#vrh {
+  cursor: pointer;
+  position: fixed;
+  bottom: 9%;
+  right: 5%;
+  z-index: 1;
+}
+table {
+  width: 100%;
+  font-size: 18px;
+  padding: 20px;
+  margin-right: 150px;
+  opacity: 0;
+  transition: 1500ms all ease;
+}
+table td {
+  width: 33%;
+}
+.pk {
+  text-align: right;
+}
+.tk {
+  text-align: left;
+}
+.tk p {
+  margin-left: 20px;
+}
+label {
+  margin-right: 20px;
+}
+select,
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+select:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+#dugme {
+  width: 100%;
+  background-color: #fcbf49;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.greska {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #f00;
+}
+
+#uspesno {
+  margin-left: 20px;
+  font-size: 20px;
+  color: green;
+}
+#prikazivise {
+  background: #fcbf49;
+  outline: none;
+  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 20%;
+  margin-top: 20px;
+  padding: 5px 20px;
+  margin-left: 45%;
+  font-size: 16px;
+}
+#vise {
+  display: none;
+}
+.fa-check {
+  font-size: 1.3em;
+  color: rgb(0, 161, 0);
+  font-weight: bold;
+}

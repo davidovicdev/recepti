@@ -1,0 +1,94 @@
+@media only screen and (max-width: 1244px) {
+  .isti img {
+    max-height: 150px;
+  }
+}
+@media only screen and (max-width: 1115px) {
+  #thumb a {
+    bottom: 5%;
+    left: 34%;
+  }
+}
+@media only screen and (max-width: 969px) {
+  #text {
+    width: 90%;
+    padding: 20px;
+  }
+  #thumb a {
+    bottom: 10%;
+    left: 32%;
+  }
+  #thumb h1 {
+    font-size: 20px;
+  }
+
+  #oautoru img {
+    width: 200px;
+    margin-right: 35%;
+    height: auto;
+  }
+  footer {
+    font-size: 14px;
+  }
+  #vreme {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+  #header {
+    height: 70px;
+  }
+  #header a {
+    font-size: 16px;
+  }
+  #header img {
+    height: 100%;
+    width: auto;
+  }
+  .isti {
+    display: inline-block;
+  }
+  .isti img {
+    width: 30%;
+    margin-left: 1%;
+    display: block;
+  }
+  #thumb {
+    display: none;
+  }
+  form {
+    width: 100%;
+  }
+  #oautoru img {
+    width: 200px;
+    height: auto;
+  }
+  #dokumentacija {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header {
+    display: block;
+  }
+  header a {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    margin: 0px;
+    margin-top: 3px;
+    padding: 2px;
+  }
+  footer {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  footer #mreze {
+    margin: 2px auto;
+  }
+}

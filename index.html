@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Matija Davidovic" />
+  <meta name="keywords" content="specijalitet, obrok, kuvanje, recept, recepti, cooking, kitchen, food" />
+  
+  
+  
+  
+  <meta name="description" content="Upoznajte se sa našim receptima iz najbolje kuhinje" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="icon" href="img/favicon.png" />
+
+  <link href="dist/jquery.magnify.css" rel="stylesheet" />
+  <!-- JQUERY PLUGIN ZA SLIKE-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+  <script src="dist/jquery.magnify.js"></script>
+  <title>Početna</title>
+</head>
+
+<body>
+  <header id="header"></header>
+  <main>
+    <img src="img/gore.png" id="vrh" alt="Na Vrh">
+    <div id="thumb">
+      <div id="h1ih2">
+        <h2>Želite da probate najbolje specijalitete?</h2>
+        <h1>Na pravom ste mestu!</h1>
+        <p>Za vas imamo recepte raznih domaćih jela.</p>
+      </div>
+      <a href="#recepti">Saznaj više</a>
+    </div>
+    <div id="recepti">
+      <h3>Recepti</h3>
+    </div>
+    <div id="kontakt">
+      <h3>Kontakt</h3>
+      <form id="forma" action="1.php" method="POST">
+        <table>
+          <tr>
+            <td class="pk"><label for="ime">Ime:</label></td>
+            <td>
+              <input type="text" placeholder="Pera" id="ime" name="ime" />
+            </td>
+            <td class="tk">
+              <p id="greskaime" class="greska"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="pk"><label for="prezime">Prezime: </label></td>
+            <td>
+              <input type="text" placeholder="Perić" id="prezime" name="prezime" />
+            </td>
+            <td class="tk">
+              <p id="greskaprezime" class="greska"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="pk"><label for="grad">Grad: </label></td>
+            <td>
+              <select id="grad"> </select>
+            </td>
+            <td class="tk">
+              <p id="greskagrad" class="greska"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="pk"><label for="email">Email: </label></td>
+            <td>
+              <input type="email" placeholder="pera123@gmail.com" id="email" name="email" />
+            </td>
+            <td class="tk">
+              <p id="greskaemail" class="greska"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="pk"><label for="broj">Broj telefona: </label></td>
+            <td>
+              <input type="text" placeholder="060/1122-334" id="broj" name="broj" />
+            </td>
+            <td class="tk">
+              <p id="greskabroj" class="greska"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="pk"><label for="poruka">Poruka: </label></td>
+            <td>
+              <textarea id="poruka" placeholder="Vaša poruka"></textarea>
+            </td>
+            <td class="tk">
+              <p id="greskaporuka" class="greska"></p>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="button" id="dugme" value="Pošalji" /></td>
+            <td class="tk">
+              <p id="uspesno"></p>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div id="oautoru">
+      <h3 id="hatri">O Autoru</h3>
+      <div id="text">
+        <p id="paragraf">
+          Zovem se Matija Davidović, živim u Beogradu i trenutno sam student
+          druge godine Visoke ICT škole.
+          <p id="vise"> Završio sam srednju tehničku PTT
+            školu sa vrlo dobrim uspehom. Još kao mali su me zanimali računari,
+            telefoni i ostale nove tehnologije pa kao želju da budem programer
+            upisao sam ovu školu. Ovaj sajt predstavlja predispitnu obavezu iz
+            predmeta Web Programiranje 1.</p>
+          <button id="prikazivise">Prikaži više</button>
+        </p>
+      </div>
+      <img id="autor" src="img/autor.jpeg" alt="Matija Davidović" />
+      <div class="cleaner"></div>
+    </div>
+  </main>
+  <footer>
+    <p id="cr">Copyright&copy; Matija Davidović 115/18</p>
+    <a href="dokumentacija.pdf" id="dokumentacija" target="_blank">Dokumentacija</a>
+    <div id="vreme"></div>
+    <div id="mreze"></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
